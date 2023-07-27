@@ -4,7 +4,7 @@
 웹사이트 width값 기준으로 설정해서 자연스러운 반응형 웹을 설계한다. */
 @media screen and (max-width:1160px) {
     /* 1160px 이하일 경우 좌우 15px 여백 적용 */
-    header {width:calc(100%-30px)}
+    header {width:calc(100% - 30px);}
 } /* 1160px end */
 @media screen and (max-width:900px){
     header nav ul {display:none;}
@@ -23,4 +23,5 @@
     header nav .m_nav span:nth-child(1) {}
     header nav .m_nav span:nth-child(2) {}
     header nav .m_nav span:nth-child(3) {}
-}/*900 end*/
+    /* m-nav-open */
+}
