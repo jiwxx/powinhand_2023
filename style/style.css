@@ -57,16 +57,20 @@ header .m_nav_open ul li a {font-size: 1.3rem;}
 /* .swiper 플러그인의 정식명칭 클래스는
 웹 페이지 1장에서 swiper가 2개 이상 들어올 경우
 디자인이 강제로 중복될 수 있으므로 개별 아이디 및 클래스를 사용해서 선택자를 만들고 디자인한다. */
+/* swiper-slide 반응형 설계를 할 경우 */
+/* swiper-slide 자체가 가변형 기능을 내장하고 있기 때문에 가장 바깥쪽 swiper영역틀 기준으로
+가변크기를 넣어주면 자동으로 반응형에 맞춰지는 슬라이드가 완성된다. */
 main #pawin_slide {
-    width:1160px; height:650px;
+    max-width:1160px;
+    height:650px;
     background:teal;
 }
 main #pawin_slide .swiper-wrapper {}
 main #pawin_slide .swiper-wrapper .slide1 {
-    background:url(https://picsum.photos/id/1/1160);
+    background:url(../image/pawin_slide_desktop.jpg) center;
 }
 main #pawin_slide .swiper-wrapper .slide2 {
-    background:url(https://picsum.photos/id/40/1160);
+    background:url(https://picsum.photos/id/45/1160);
 }
 main #pawin_slide .swiper-wrapper .slide3 {
     background:url(https://picsum.photos/id/20/1160);
@@ -74,11 +78,14 @@ main #pawin_slide .swiper-wrapper .slide3 {
 main #pawin_slide .swiper-wrapper .slide4 {
     background:url(https://picsum.photos/id/10/1160);
 }
+/* swiper-slide prev, next 기본 css(position:absolute)내장 */
 main #pawin_slide .swiper-button-prev {
     background: url(../image/prev.png) no-repeat;
+    left:20px;
 }
 main #pawin_slide .swiper-button-next {
     background: url(../image/next.png) no-repeat;
+    right:20px;
 }
 main #pawin_slide .swiper-button-next,
 main #pawin_slide .swiper-button-prev {
