@@ -44,7 +44,7 @@ const pawin_slide = new Swiper('#pawin_slide',{
         prevEl: '#pawin_slide .swiper-button-prev',
     },
 });
-const pawin_slide2 = new Swiper('#pawin_slide2',{
+const pawin_slide1 = new Swiper('#pawin_slide1',{
     autoplay:{
         delay:10000, //슬라이드 간격(밀리초) 기본3초
         disableOnInteraction:false, //버튼 클릭 후 자동재생 유지
@@ -57,3 +57,24 @@ const pawin_slide2 = new Swiper('#pawin_slide2',{
     },
 });
 
+//pawin-slide2
+const pawin_slide2 = new Swiper('#pawin_slide2',{
+    autoplay:{delay:1000},
+    loop:true,
+    effect:'fade',
+});
+
+const dog_info_slide = new Swiper('#dog_info_slide',{
+    slidesPerView:'auto', //breakpoints 옵션 추가시 'auto', 한번에 보이는 슬라이드 개수
+    spaceBetween:20, // 슬라이드 사이 여백
+    autoplay:{delay:1000},
+    loop:true,
+    //swiper-slide 반응형 웹 옵션
+    breakpoints:{
+        //해상도:{옵션:값}
+        400:{slidesPerview:2},//400~899
+        // 700:{slidesPerView:2},//700이상일 때
+        900:{slidesPerView:3},//900이상일 때
+        1160:{slidesPerView:4} //1160이상일 경우 슬라이드 4개 표시
+    },
+});

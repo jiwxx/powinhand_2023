@@ -8,6 +8,7 @@
     /* main #pawin_slide {width:calc(100% - 30px);} */
     
 } /* 1160px end */
+    /* 900px start */
 @media screen and (max-width:900px){
     header nav ul {display:none;}
     /* 반응형웹의 슬라이드는 높이 고정하는 슬라이드의 경우 데스크탑, 모바일용의 이미지를 따로 제작하고
@@ -30,4 +31,6 @@
     header nav .m_nav span:nth-child(2) {}
     header nav .m_nav span:nth-child(3) {}
     /* m-nav-open */
+    /* swiper_slide2 */
+    
 }
